@@ -1,17 +1,14 @@
-title: Your awesome title
-author: Your Name
-email: your-email@domain.com
+title: Jonathan Conley
+author: Jonathan Conley
+email: conley.jj@gmail.com
 description: > # this means to ignore newlines until "show_exerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Jonathan Conley's software portfolio.
 
 # Header Links
-homepage: https://blog.tedivm.com
-twitter_username: example
-github_username:  example
-linkedin_username: example
-
+homepage: http://127.0.0.1:4000
+twitter_username: 
+github_username:  jconley88
+linkedin_username: jconley88
 
 
 # Build settings
@@ -20,3 +17,5 @@ theme: jekyll-theme-portfolio
 plugins:
  - jekyll-feed
  - jekyll-seo-tag
+
+exclude: [README.md, LICENSE.md, jekyll-portfolio.gemspec, update_bootstrap.sh]

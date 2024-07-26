@@ -7,3 +7,4 @@ Gemfile.lock
 *.gem
 
 .ruby-version
+.DS_Store
