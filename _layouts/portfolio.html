@@ -34,32 +34,34 @@ columns: 3
               </div>
               <div class="card-body">
                 <h5 class="card-title">{{ project.name }}
-                {% if project.github %}
-                <div class="float-right"><a class="github-button" href="https://github.com/{{ project.github }}" data-show-count="true" aria-label="Star {{ project.name }} on GitHub">Star</a><div>
+                {% if project.repositories.github %}
+                <div class="float-right"><a class="github-button" href="https://github.com/{{ project.repositories.github }}" data-show-count="true" aria-label="Star {{ project.name }} on GitHub">Star</a><div>
                 {% endif %}
                 </h5>
                 {% if project.description %}
                 <p class="card-text">{{ project.description | safe | newline_to_br }}</p>
                 {% endif %}
               </div>
-              <ul class="list-group list-group-flush">
-                <li class="list-group-item text-center">
-                  {% if project.homepage %}<a href="{{ project.homepage }}" class="card-link"><i class="fas fa-home fa-2x" title="{{ project.name }} Homepage"></i></a>{% endif %}
-                  {% if project.documentation %}<a href="{{ project.documentation }}" class="card-link"><i class="fas fa-book-open fa-2x" title="{{ project.name }} Documentation"></i></a>{% endif %}
-                  {% if project.github %}<a href="https://github.com/{{ project.github }}" class="card-link"><i class="fab fa-github fa-2x" title="{{ project.name }} on Github"></i></a>{% endif %}
-                  {% if project.dockerhub %}<a href="https://hub.docker.com/r/{{ project.dockerhub }}" class="card-link"><i class="fab fa-docker fa-2x" title="{{ project.name }} on Docker Hub"></i></a>{% endif %}
-                  {% if project.ghcr %}
-                    {% assign ghcr_project = project.ghcr | split: '/' | last %}
-                    <a href="https://github.com/{{ project.ghcr }}/pkgs/container/{{ ghcr_project }}" class="card-link"><i class="fab fa-docker fa-2x" title="{{ ghcr_project }} on Github Container Registry"></i></a>
-                  {% endif %}
-                  {% if project.puppet_forge %}<a href="https://forge.puppet.com/{{ project.puppet_forge }}" class="card-link"><i class="fas fa-flask fa-2x" title="{{ project.name }} on Puppet Forge"></i></a>{% endif %}
-                  {% if project.npm %}<a href="https://www.npmjs.com/package/{{ project.npm }}" class="card-link"><i class="fab fa-npm fa-2x" title="{{ project.name }} on the NPM Registry"></i></a>{% endif %}
-                  {% if project.pypi %}<a href="https://pypi.org/project/{{ project.pypi }}/" class="card-link"><i class="fab fa-python fa-2x" title="{{ project.name }} on PyPI"></i></a>{% endif %}
-                  {% if project.packagist %}<a href="https://packagist.org/packages/{{ project.packagist }}" class="card-link"><i class="fab fa-php fa-2x" title="{{ project.name }} on Packagist"></i></a>{% endif %}
-                  {% if project.rubygems %}<a href="https://rubygems.org/gems/{{ project.rubygems }}/" class="card-link"><i class="fas fa-gem fa-2x" title="{{ project.name }} on RubyGems"></i></a>{% endif %}
-                  {% if project.wordpress %}<a href="https://wordpress.org/plugins/{{ project.wordpress }}/" class="card-link"><i class="fab fa-wordpress fa-2x" title="{{ project.name }} on the Wordpress Plugin Directory"></i></a>{% endif %}
-                </li>
-              </ul>
+              {% if project.repositories %}
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item text-center">
+                    {% if project.repositories.homepage %}<a href="{{ project.repositories.homepage }}" class="card-link"><i class="fas fa-home fa-2x" title="{{ project.name }} Homepage"></i></a>{% endif %}
+                    {% if project.repositories.documentation %}<a href="{{ project.repositories.documentation }}" class="card-link"><i class="fas fa-book-open fa-2x" title="{{ project.name }} Documentation"></i></a>{% endif %}
+                    {% if project.repositories.github %}<a href="https://github.com/{{ project.repositories.github }}" class="card-link"><i class="fab fa-github fa-2x" title="{{ project.name }} on Github"></i></a>{% endif %}
+                    {% if project.repositories.dockerhub %}<a href="https://hub.docker.com/r/{{ project.repositories.dockerhub }}" class="card-link"><i class="fab fa-docker fa-2x" title="{{ project.name }} on Docker Hub"></i></a>{% endif %}
+                    {% if project.repositories.ghcr %}
+                      {% assign ghcr_project = project.repositories.ghcr | split: '/' | last %}
+                      <a href="https://github.com/{{ project.repositories.ghcr }}/pkgs/container/{{ ghcr_project }}" class="card-link"><i class="fab fa-docker fa-2x" title="{{ ghcr_project }} on Github Container Registry"></i></a>
+                    {% endif %}
+                    {% if project.repositories.puppet_forge %}<a href="https://forge.puppet.com/{{ project.repositories.puppet_forge }}" class="card-link"><i class="fas fa-flask fa-2x" title="{{ project.name }} on Puppet Forge"></i></a>{% endif %}
+                    {% if project.repositories.npm %}<a href="https://www.npmjs.com/package/{{ project.repositories.npm }}" class="card-link"><i class="fab fa-npm fa-2x" title="{{ project.name }} on the NPM Registry"></i></a>{% endif %}
+                    {% if project.repositories.pypi %}<a href="https://pypi.org/project/{{ project.repositories.pypi }}/" class="card-link"><i class="fab fa-python fa-2x" title="{{ project.name }} on PyPI"></i></a>{% endif %}
+                    {% if project.repositories.packagist %}<a href="https://packagist.org/packages/{{ project.repositories.packagist }}" class="card-link"><i class="fab fa-php fa-2x" title="{{ project.name }} on Packagist"></i></a>{% endif %}
+                    {% if project.repositories.rubygems %}<a href="https://rubygems.org/gems/{{ project.repositories.rubygems }}/" class="card-link"><i class="fas fa-gem fa-2x" title="{{ project.name }} on RubyGems"></i></a>{% endif %}
+                    {% if project.repositories.wordpress %}<a href="https://wordpress.org/plugins/{{ project.repositories.wordpress }}/" class="card-link"><i class="fab fa-wordpress fa-2x" title="{{ project.name }} on the Wordpress Plugin Directory"></i></a>{% endif %}
+                  </li>
+                </ul>
+              {% endif %}
             </div>
           </a>
         </div>

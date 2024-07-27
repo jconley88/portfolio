@@ -8,26 +8,30 @@
 
     - name: Example
       description: This project can be installed from npm.
-      github: Example/Example
-      npm: Example
+      repositories: 
+        github: Example/Example,
+        npm: Example
 
     - name: Example
       description: This project can be installed from pypi.
-      github: Example/Example
-      pypi: Example
+      repositories: 
+        github: Example/Example
+        pypi: Example
 
 
 - name: Misc
   projects:
     - name: Example
       description: This project uses Font Awesome icons and is on Dockerhub.
-      github: Example/Example
-      dockerhub: Example/Example
       icon: fas fa-file-medical-alt
+      repositories: 
+        github: Example/Example
+        dockerhub: Example/Example
 
     - name: Example
-      description: This Wordpress Plugin is actually just an example project.
-      platform: Wordpress
-      github: Example/Example
-      wordpress: Example
       icon: fab fa-wordpress
+      description: This Wordpress Plugin is actually just an example project.
+      repositories: 
+        platform: Wordpress
+        github: Example/Example
+        wordpress: Example
