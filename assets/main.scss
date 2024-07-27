@@ -30,3 +30,25 @@
     object-fit: cover;
 }
 
+.link-wrapper {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
+    transition: background-color 0.3s, border-color 0.3s;
+    .card {
+      transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
+    }
+}
+
+.link-wrapper:hover,
+.link-wrapper:focus{
+  text-decoration: none;
+  color: inherit;
+  border-color: #ccc; /* Change border color on hover */
+  .card {
+    background-color: $primary-light;
+    box-shadow: 10px 10px 20px rgba(1, 1, 1, 0.2);
+  }
+}
