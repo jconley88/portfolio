@@ -17,7 +17,7 @@ columns: 3
       <div class="row">
       {% endif %}
         <div class="col-12 col-sm-6 col-xl-{{ 12 | divided_by: layout.columns | int }} my-3">
-          <a href="http://127.0.0.1:4000/mythos" class="link-wrapper">
+          <a href="{{ project.path }}" class="link-wrapper">
             <div class="card">
               <div class="text-center">
               {% if project.image %}
