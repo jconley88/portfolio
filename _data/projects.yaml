@@ -7,11 +7,10 @@
       path: mythos
       image: mythos/mythos_galork.jpg
 
-    - name: Example
-      description: This project can be installed from npm.
-      repositories: 
-        github: Example/Example,
-        npm: Example
+    - name: Debugging Map for Ruby and Rails
+      description: A Visual Studio Code extension for high level debugging insight and faster development cycle times.
+      path: debugger
+      image: debugger/thumbnail.png
 
     - name: Example
       description: This project can be installed from pypi.
