@@ -1,4 +1,4 @@
-- name: CLIs
+- name: Personal Projects
   icon: fas fa-terminal
   projects:
     - name: Mythos Character Sheet
@@ -11,27 +11,3 @@
       description: A Visual Studio Code extension for high level debugging insight and faster development cycle times.
       path: debugger
       image: debugger/thumbnail.png
-
-    - name: Example
-      description: This project can be installed from pypi.
-      repositories: 
-        github: Example/Example
-        pypi: Example
-
-
-- name: Misc
-  projects:
-    - name: Example
-      description: This project uses Font Awesome icons and is on Dockerhub.
-      icon: fas fa-file-medical-alt
-      repositories: 
-        github: Example/Example
-        dockerhub: Example/Example
-
-    - name: Example
-      icon: fab fa-wordpress
-      description: This Wordpress Plugin is actually just an example project.
-      repositories: 
-        platform: Wordpress
-        github: Example/Example
-        wordpress: Example
