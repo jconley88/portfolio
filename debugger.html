@@ -2,14 +2,7 @@
 layout: default
 ---
 <div class='col-12 my-3'>
-  <h3>
-    Ruby and Ruby on Rails - Time Traveling Debugger
-  </h3>
-  <p class="text-muted font-italic d-block">
-    You should easily be able to find out exactly how your application functions for every entry point; libraries and all. Unfortunately, when a single rails request can easily be 10s or even 100s of thousands of method calls, current debugging techniques make it nearly impossibly to quickly gain a high level understanding of code execution especially when delving into external libraries. This debugger fills the tooling gap by providing a high level, navigable view of all method calls and variable values. It greatly reduces the need for the normal iterative debug cycle where you add a <em>puts</em> or <em>debug</em> statement, rerun, check logs or step through, then modify and repeat.
-  </p>
-
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval={{ site.carousel_interval }} data-pause="hover" data-wrap="false">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval={{ site.carousel_interval }} data-pause=false data-wrap=false>
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -19,19 +12,19 @@ layout: default
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item debugger active">
-        <img src="/assets/images/projects/debugger/trace_0.png" class="d-block w-100" alt="Home page screenshot of Mythos character sheet">
+        <img src="/assets/images/projects/debugger/trace_0.png" class="d-block w-100" alt="screenshot of the debugger extension calling out how to set up a trace">
       </div>
       <div class="carousel-item debugger">
-        <img src="/assets/images/projects/debugger/trace_2.png" class="d-block w-100" alt="Equipment tab screenshot of Mythos character sheet">
+        <img src="/assets/images/projects/debugger/trace_2.png" class="d-block w-100" alt="screenshot of the debugger extension calling out the method call tree sidebar for the trace">
       </div>
       <div class="carousel-item debugger">
-        <img src="/assets/images/projects/debugger/trace_3.png" class="d-block w-100" alt="Active battle tab screenshot of Mythos character sheet">
+        <img src="/assets/images/projects/debugger/trace_3.png" class="d-block w-100" alt="screenshot of the debugger extension showing how executed lines in the trace are highlighted in gray and executed lines for the currently selected method are highlighted in green">
       </div>
       <div class="carousel-item debugger">
-        <img src="/assets/images/projects/debugger/trace_4.png" class="d-block w-100" alt="Equipment tab screenshot of Mythos character sheet">
+        <img src="/assets/images/projects/debugger/trace_4_v2.jpg" class="d-block w-100" alt="screenshot of the debugger extension calling out the variable value annotations on every executed line">
       </div>
       <div class="carousel-item debugger">
-        <img src="/assets/images/projects/debugger/trace_5.png" class="d-block w-100" alt="Active battle tab screenshot of Mythos character sheet">
+        <img src="/assets/images/projects/debugger/trace_5_v2.png" class="d-block w-100" alt="screenshot of the debugger extension showing how you can select which files or gems should be displayed or hidden in the call tree side bar">
       </div>
     </div>
     <a class="carousel-control-prev" role="button" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
@@ -43,17 +36,38 @@ layout: default
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <div>
-    <ul>
-      <li>
-        A ruby gem uses Tracepoint to record the call graph and variable values in a sqlite database.
-      </li>
-      <li>
-        The extension, written in typescript, then loads the data from the sqlite database.
-      </li>
-    </ul>
-  </div>
+  <h3>
+    Debugging Tool for Ruby and Rails
+  </h3>
   <p class="text-muted font-italic d-block">
-    This is currently in private beta. I would love to share the code and my thought process. Please reach out if you would like more information.
+    I wrote my own ruby debugger.
   </p>
+  <div class="row">
+    <div class='col-8 my-3'>
+      <p class="text-muted d-block">
+        I had been thinking about this project for years and finally decided to spend the first half of 2024 building out an alpha version. It is structurally similar to a time traveling debugger, but with a focus on higher level insight. It is composed of two separate code bases; a Ruby tracing gem and a VS Code extension.
+      </p>
+      <p class="text-muted d-block">
+        It has reached a fully functional milestone and I am very excited to plan a public release after some additional stress testing. I'd be glad to share any aspect of this project and would love to hear from you.
+      </p>
+    </div>
+    <div class='col-4 my-3'>
+      <div>
+        Ruby Tracing Gem Technologies
+        <ul>
+          <li>
+            Ruby, TracePoint gem, Parser gem, railtie and middleware, sqlite3
+          </li>
+        </ul>
+      </div>
+      <div>
+        VS Code Extension Technologies
+        <ul>
+          <li>
+            Typescript, sqlite3, tries
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>

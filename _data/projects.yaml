@@ -8,7 +8,7 @@
       image: mythos/mythos_galork.jpg
       caption: Character generation by HeroForge
 
-    - name: Debugging Map for Ruby and Rails
+    - name: Debugger for Ruby and Rails
       description: A Visual Studio Code extension for high level debugging insight and faster development cycle times.
       path: debugger
       image: debugger/thumbnail.png
