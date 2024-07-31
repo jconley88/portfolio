@@ -14,7 +14,7 @@ linkedin_username: jconley88
 # Build settings
 theme: jekyll-theme-portfolio
 
-carousel_interval: 3000
+carousel_interval: 6000
 
 plugins:
  - jekyll-feed
