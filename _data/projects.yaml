@@ -2,7 +2,7 @@
   icon: fas fa-terminal
   projects:
     - name: Mythos Character Sheet
-      description: A character sheet and player reference for a fantasy tabletop role-playing game created by my friend.
+      description: A character sheet and player reference for a fantasy tabletop role-playing game.
       # github: jconley88/mythos
       path: mythos
       image: mythos/mythos_galork.jpg

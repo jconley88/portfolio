@@ -2,11 +2,6 @@
 layout: default
 ---
 <div class='col-12 my-3'>
-  <h3>
-    Mythos - Fantasy Tabletop Role-playing Game
-  </h3>
-  <p class="text-muted font-italic d-block">Locally hosted character sheet and active battle tracker</p>
-
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval={{ site.carousel_interval }} data-pause="hover" data-wrap="false">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -33,20 +28,33 @@ layout: default
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <div>
-    <ul>
-      <li>
-        Single page Vue application with ~40 Vue components
-      </li>
-      <li>
-        Languages: Javascript, HTML, CSS
-      </li>
-      <li>
-        Technologies: Vuex, Firebase, Web Storage API:localStorage, Zurb Foundation
-      </li>
-      <li>
-        Boilerplate styling with focus on quick reference and usability
-      </li>
-    </ul>
+  <h3>
+    Mythos Character Sheet
+  </h3>
+  <p class="text-muted font-italic d-block">A character sheet, inventory and active battle tracker created solely for personal use.</p>
+  <div class="row">
+    <div class="col-8">
+      <p class="text-muted font-italic d-block">Mythos is a mature, but unreleased fantasy tabletop role-playing game similar to Dungeons and Dragons. I was lucky enough to meet the creator in person and later play-test online through the covid-years.</p>
+      <p class="text-muted d-block">With a 100 page rule book and frequently changing conditions, recalculating stats by hand can take time and be error prone. I wrote this to handle that so I could better focus on character decisions and actual play. Touch base with me; I would love to share this with you.</p>
+    </div>
+    <div class="col-4">
+      <div>
+        <ul>
+          <li>
+            Single page Vue application with ~40 Vue components
+          </li>
+          <li>
+            Languages: Javascript, HTML, CSS
+          </li>
+          <li>
+            Technologies: Vue, Vuex, Firebase, Web Storage API:localStorage, Zurb Foundation
+          </li>
+          <li>
+            Boilerplate styling with focus on quick reference and usability
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
+  <p class="text-muted font-italic d-block small">I am proud of this, but it is not meant to be a UI masterpeice. I built this as a functional tool to learn Vue and have fun.</p>
 </div>
