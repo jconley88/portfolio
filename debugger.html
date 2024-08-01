@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<div class='col-12 my-3'>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval={{ site.carousel_interval }} data-pause=false data-wrap=false>
+<div class="col-12 my-3">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="{{ site.carousel_interval }}" data-pause="false" data-wrap="false">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -12,19 +12,19 @@ layout: default
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item debugger active">
-        <img src="/assets/images/projects/debugger/trace_0.png" class="d-block w-100" alt="screenshot of the debugger extension calling out how to set up a trace">
+        <img src="/assets/images/projects/debugger/trace_0.png" class="d-block w-100" alt="Screenshot of the debugger extension calling out how to set up a trace">
       </div>
       <div class="carousel-item debugger">
-        <img src="/assets/images/projects/debugger/trace_2.png" class="d-block w-100" alt="screenshot of the debugger extension calling out the method call tree sidebar for the trace">
+        <img src="/assets/images/projects/debugger/trace_2.png" class="d-block w-100" alt="Screenshot of the debugger extension calling out the method call tree sidebar for the trace">
       </div>
       <div class="carousel-item debugger">
-        <img src="/assets/images/projects/debugger/trace_3.png" class="d-block w-100" alt="screenshot of the debugger extension showing how executed lines in the trace are highlighted in gray and executed lines for the currently selected method are highlighted in green">
+        <img src="/assets/images/projects/debugger/trace_3.png" class="d-block w-100" alt="Screenshot of the debugger extension showing how executed lines in the trace are highlighted in gray and executed lines for the currently selected method are highlighted in green">
       </div>
       <div class="carousel-item debugger">
-        <img src="/assets/images/projects/debugger/trace_4_v2.jpg" class="d-block w-100" alt="screenshot of the debugger extension calling out the variable value annotations on every executed line">
+        <img src="/assets/images/projects/debugger/trace_4_v2.jpg" class="d-block w-100" alt="Screenshot of the debugger extension calling out the variable value annotations on every executed line">
       </div>
       <div class="carousel-item debugger">
-        <img src="/assets/images/projects/debugger/trace_5_v2.png" class="d-block w-100" alt="screenshot of the debugger extension showing how you can select which files or gems should be displayed or hidden in the call tree side bar">
+        <img src="/assets/images/projects/debugger/trace_5_v2.png" class="d-block w-100" alt="Screenshot of the debugger extension showing how you can select which files or gems should be displayed or hidden in the call tree sidebar">
       </div>
     </div>
     <a class="carousel-control-prev" role="button" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
@@ -36,36 +36,24 @@ layout: default
       <span class="sr-only">Next</span>
     </a>
   </div>
-  <h3>
-    Debugging Tool for Ruby and Rails
-  </h3>
-  <p class="text-muted font-italic d-block">
-    I wrote my own ruby debugger.
-  </p>
+  <h3>Debugging Tool for Ruby and Rails</h3>
+  <p class="text-muted font-italic d-block">I wrote my own Ruby debugger.</p>
   <div class="row">
-    <div class='col-8 my-3'>
-      <p class="text-muted d-block">
-        I had been thinking about this project for years and finally decided to spend the first half of 2024 building out an alpha version. It is structurally similar to a time traveling debugger, but with a focus on higher level insight. It is composed of two separate code bases; a Ruby tracing gem and a VS Code extension.
-      </p>
-      <p class="text-muted d-block">
-        It has reached a fully functional milestone and I am very excited to plan a public release after some additional stress testing. I'd be glad to share any aspect of this project and would love to hear from you.
-      </p>
+    <div class="col-8 my-3">
+      <p class="text-muted d-block">I had been thinking about this project for years and finally decided to spend the first half of 2024 building out an alpha version. It is structurally similar to a time-traveling debugger but with a focus on higher-level insight. It is composed of two separate codebases: a Ruby tracing gem and a VS Code extension.</p>
+      <p class="text-muted d-block">It has reached a fully functional milestone, and I am very excited to plan a public release after some additional stress testing. I'd be glad to share any aspect of this project and would love to hear from you.</p>
     </div>
-    <div class='col-4 my-3'>
+    <div class="col-4 my-3">
       <div>
-        Ruby Tracing Gem Technologies
+        <strong>Ruby Tracing Gem Technologies</strong>
         <ul>
-          <li>
-            Ruby, TracePoint gem, Parser gem, railtie and middleware, sqlite3
-          </li>
+          <li>Ruby, TracePoint gem, Parser gem, Railtie and middleware, SQLite3</li>
         </ul>
       </div>
       <div>
-        VS Code Extension Technologies
+        <strong>VS Code Extension Technologies</strong>
         <ul>
-          <li>
-            Typescript, sqlite3, tries
-          </li>
+          <li>TypeScript, SQLite3, Tries</li>
         </ul>
       </div>
     </div>
