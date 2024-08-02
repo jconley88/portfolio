@@ -19,7 +19,7 @@
         {% endfor -%}
         {% if site.homepage %}
         <li class="nav-item">
-          <a class="nav-link" href="{{ site.homepage }}" aria-label="Go to homepage"><i class="fas fa-home fa-2x" title="Go to homepage."></i></a>
+          <a class="nav-link" href="{{ site.homepage | relative_url }}" aria-label="Go to homepage"><i class="fas fa-home fa-2x" title="Go to homepage."></i></a>
         </li>
         {% endif %}
         {% if site.github_username %}

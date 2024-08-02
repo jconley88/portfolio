@@ -5,11 +5,10 @@ description: > # this means to ignore newlines until "show_exerpts:"
   Jonathan Conley's software portfolio.
 
 # Header Links
-homepage: http://127.0.0.1:4000
+homepage: /
 twitter_username: 
 github_username:  jconley88
 linkedin_username: jconley88
-
 
 # Build settings
 remote_theme: jekyll-theme-portfolio
