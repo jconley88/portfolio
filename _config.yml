@@ -12,7 +12,7 @@ linkedin_username: jconley88
 
 
 # Build settings
-theme: jekyll-theme-portfolio
+remote_theme: jekyll-theme-portfolio
 
 carousel_interval: 6000
 
