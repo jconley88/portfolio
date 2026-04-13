@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<div class="col-12 my-3">
+  <div class="my-3" style="box-shadow: 10px 10px 20px rgba(1, 1, 1, 1);">
+    <img src="{{ "/assets/images/projects/leapstories/official_chrome_screenshot_1280x800.png" | relative_url }}" class="d-block w-100" alt="Screenshot of LeapStories on Hacker News showing a captured leap story injected at the top of the page and duplicate stories dimmed below">
+  </div>
+  <h3>LeapStories</h3>
+  <p class="text-muted font-italic d-block">A browser extension that catches the Hacker News stories you miss when rankings shift between page loads.</p>
+  <p class="text-muted font-italic d-block">
+    LeapStories is available on the <a href="https://chromewebstore.google.com/detail/leapstories/mcfonglcjdkcnimpbiohocbmapcglehh" target="_blank" rel="noopener">Chrome Web Store</a>.
+  </p>
+  <div class="row">
+    <div class="col-8 my-3">
+      <p class="text-muted d-block">
+        Pagination for ranking sites, like YC Hacker News, poses an interesting problem. Have you ever noticed how, on page 2 of a ranked news site, some of the stories are sometimes repeats from page 1? If you go back to page 1, you'll see a new story or two that you would have missed. These are the LeapStories that the name of this extension refers to.
+      </p>
+      <p class="text-muted d-block">
+         Point in time queries or live polling could theoretically address this "issue", but they're heavy handed and come with trade-offs. We don't truly need either, we just want to capture all new stories at the point of page load even if they're now technically on the prior page. I wrote this extension not just to solve this particular problem, but also as concrete suggestion that it <strong>should</strong> (and can be) solved.
+      </p>
+      <p class="text-muted d-block">
+        While this is a relatively light client side solution requiring only an additional single api call, it could also be solved server side without full point-in-time snapshotting.
+      </p>
+    </div>
+    <div class="col-4 my-3">
+      
+      <div>
+        <strong>Key Features</strong>
+        <ul>
+          <li>Leap story detection and injection</li>
+          <li>Duplicate story dimming</li>
+          <li>Unobtrusive reuse of existing styling</li>
+          <li>Privacy-first, no tracking</li>
+          <li>Also available for Firefox</li>
+        </ul>
+      </div>
+      <div>
+        <strong>Technologies</strong>
+        <ul>
+          <li>JavaScript</li>
+          <li>Chrome Extension (Manifest V3)</li>
+          <li>Chrome Storage API: session & local</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

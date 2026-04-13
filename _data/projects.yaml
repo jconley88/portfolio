@@ -12,3 +12,10 @@
       description: A Visual Studio Code extension for high level debugging insight and faster development cycle times.
       path: debugger
       image: debugger/thumbnail.png
+
+    - name: LeapStories
+      description: A browser extension that catches YC Hacker News stories you miss when rankings shift between page loads.
+      path: leapstories
+      image: leapstories/frog_with_fly_and_tongue.svg
+      caption: Available on the Chrome Web Store
+
